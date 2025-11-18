@@ -33,8 +33,9 @@
   <div class="bio-text">
     <h2>Hello!</h2>
     <p>
-      My name is Kai. I'm 22 and recently graduated college. Ever since I was little,
-      my brother and I have been making video games together. We started in Unity
+      Hey, I’m Kai. I’m a 22-year-old game developer and environment artist with a background in Computer Science. 
+      I love creating immersive worlds, building systems from scratch, and bringing ideas to life inside Unreal Engine.
+       Ever since I was little, my brother and I have been making video games together. We started in Unity
       and eventually moved to Unreal Engine. I'm an artist at heart, and I love
       taking the ideas in my head and turning them into something real—that's what
       keeps me passionate about game development.
@@ -127,12 +128,9 @@
   <video autoplay loop muted playsinline>
     <source src="UnhallowedBosses.mp4">
   </video>
-  <p> Boss showcase! First boss is the Gravemound. An ape looking amalgam consisting of tombstones, bones and anything else you'd find in a graveyard. 
-    The model was made by my brother Shane. I weight painted and added animations from online as well as the AI behavior. Second boss 
-    is the reaper. A skeletal warlock that throws magic at you, summons skeletons, raises bones from the ground as an AOE attack and fades into
-    the abyss only to come back at you with his scythe. The skeletal assets were made by Shane as well, but I made and painted the cloak,
-    by running a cloth simulation over the skeleton. I then painted the cloak and the skeleton, weight painted it and gave is some animations 
-    as you can see below as well as some custom ones. </p>
+  <p> This clip showcases two of the project’s major boss encounters.
+• The Gravemound — A hulking creature built from tombstones, bones, and graveyard debris. My brother created the base model, while I handled weight-painting, animation integration, and AI behavior.
+• The Reaper — A skeletal warlock who uses ranged magic, AOE abilities, and teleport attacks. I created and simulated his cloak in Blender, handled the weight-painting, integrated both Mixamo and custom animations, and developed the behavior system. </p>
     <br>
     <div class="row">
     <video width="540" height="720" autoplay loop muted playsinline>
@@ -146,16 +144,17 @@
 
     <h2> Phyics Handle </h2>
     <img src="UnhallowedPhysicsHandle.gif">
-    <p> A pysics handle system where you could pick up boxes, crates, plates, chairs, and any furniture you could think of. The only problem
-      was you could stand ontop of something you're holding and fly.
+    <p> I implemented a physics-based interaction system allowing the player to pick up, move, and throw various objects—crates, furniture, and environmental props. One early limitation was that players could stand on objects they were holding, enabling unintended movement exploits.
     </p>
 
 <h2> Map Showcase </h2>
   <video width="1080" height="720" autoplay loop muted playsinline>
     <source src="UnhallowedMapShowcase.mp4" type="video/mp4">
   </video>
-We have two areas. One is the procedurally generated tile based dungeon (the snowy area with pink fog). The second area is a lush green area.
-Exluding the enemies, I made all the assets in blender. I made the foliage in blender as well and used Unreal's foliage system to place it.
+he project features two distinct environments:
+• A procedurally generated dungeon, built using a tile-based system and atmospheric lighting.
+• A handcrafted lush forest area, created entirely from custom Blender assets and Unreal’s foliage tools.
+Both regions were designed to contrast visually and give the world a sense of depth and variety.
   </div>
 </section>
 
@@ -176,41 +175,61 @@ Exluding the enemies, I made all the assets in blender. I made the foliage in bl
     </ul>
   </div>
   <br>
+  <h2>Multiplayer</h2>
+  <h3>Lobbies</h3>
+    <div class="row">
+      <img src="HalloweenieLobby.gif" class="side-img">
+      <p class="middle-text">
+        A lobby system where players can create servers and join them</p>
+  </div>
+  <br>
+  <h3>Spawning System</h3>
+  <img src="HalloweenieSpawnPlayers.gif" class="side-img" style="width: 100%" height="auto">
+  <p> Once all players join the server, or all players are dead the server respawns the players</p>
+  <br>
+
+  <h3>Multiplayer Gameplay</h3>
+<video autoplay loop muted playsinline>
+  <source src="HalloweenieMultiplayer.mp4">
+  </video>
+  <p>Once all players join a session, they can freely explore the world together. Player animations, item interactions, and enemy AI all replicate seamlessly across the server, creating a smooth and synchronized multiplayer experience. 
+  </p>
   <h2>Maps</h2>
   <br>
   <video autoplay loop muted playsinline>
     <source src="HalloweenieRandomMap.mp4">
   </video>
-  <strong>Forest</strong> <br>This map is very simular to Unhallowed randomly generated map. It uses the same algorithm except instead of instantiating 
-      blueprints at tile locations it instantiates entire levels creating a much more expansive environment. </p>
+  <strong>Forest</strong> <br>The forest uses an expanded version of the tile-based generation system from Unhallowed. Instead of placing individual tiles, the algorithm assembles full level chunks, allowing for larger, more natural outdoor environments with greater variation each run.. </p>
 <br>
   <video autoplay loop muted playsinline>
   <source src="HalloweenieBuiltMap.mp4">
   </video>
-      <strong>Town</strong> <br> This is a built map. Everything is hand placed, other than the foliage that was painted it. It features a fort
-    a town, a station, and the entrance to mines </p>
+      <strong>Town</strong> <br> The town is a fully handcrafted environment featuring a fort, central settlement, train-station-style hub, and entry point to an underground mine system. All major structures and props were built and arranged manually. </p>
     <br>
       <video autoplay loop muted playsinline>
   <source src="HalloweenieMines.mp4">
   </video>
-      <strong>Mines</strong> <br> From the edge of town, the entrance to a mineshaft. Explore the mines, find dynamite to clear rocks,
-    but beware, something dwells beneath. </p>
-    <br>
-      <h2>Full multiplayer integration</h2>
+      <strong>Mines</strong> <br>The mines extend from the edge of town into a dark, branching tunnel network. Players search for dynamite to clear blocked passages while an unseen threat stalks them from the shadows, heightening the tension as they progress. </p>
     <br>
     <h2>Skin Customization</h2>
     <div class="row">
-    <img src="HalloweenieSkinCustomization.gif">
+    <img src="HalloweenieSkinCustomization.gif" style="width: 75%">
           <p class="middle-text">
-      <br> Individualize your character with a skin customization system. </p>
+      <br> A fully replicated customization system allows players to personalize their character’s appearance with different skins and cosmetic variations, all synchronized across the network for other players to see. </p>
     </div>
     <br>
     <div class="row">
           <p class="middle-text">
-       <strong> Chaos Physics! </strong> <br> Maybe this explosion was a little underwhelming, but this clip showcases basic chaos physics in Unreal Engine. Basically it takes
-    a static mesh and breaks it up, and applies physics and colliders to the individual pieces. This clip is just a little test to clear
-    areas in our mines map. Pretty cool nonetheless. </p>
+       <strong> Chaos Physics! </strong> <br> This demo showcases Unreal Engine’s Chaos physics system. Objects fracture into smaller simulated pieces, creating dynamic destruction effects that can be used for clearing blocked pathways or adding environmental interaction. </p>
     <img src="HalloweenieChaosPhysics.gif" width="540" height="auto">
+  </div>
+    <div class="row">
+          <video width="540" height="720" autoplay loop muted playsinline>
+    <source src="HalloweenieBarriers.mp4" type="video/mp4">
+      </video>
+          <p class="middle-text">
+       <strong> Barriers </strong> <br> A barrier system. You can place materials, and once they're placed enemeies can destroy them.
+      Once they're destroyed you can rebuild them without having to reexpend the materials. </p>
   </div>
 
 </section>
@@ -231,8 +250,7 @@ Exluding the enemies, I made all the assets in blender. I made the foliage in bl
 <video width="1080" height="720" autoplay loop muted playsinline>
     <source src="InHerImageTrailer.mp4" type="video/mp4">
   </video>
-  <p>This is the trailer for our game In Her Image. This is not supposed to be a plug but the game is best showcased
-    on our steam page which you can click below.
+  <p>This trailer highlights In Her Image, our most polished project to date—a narrative-driven horror experience built entirely with custom assets and cinematic lighting. The full game features handcrafted environments, an opening cutscene, and a strong emphasis on atmosphere and storytelling. For a deeper look at the project, you can view the official Steam page below.
   </p>
     <a href="https://store.steampowered.com/app/4053030/In_Her_Image/" target="_blank"> 
       <img src="Steam.svg" alt="Steam" style="width:45px;height:45px;"> </a>
