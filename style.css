@@ -195,3 +195,52 @@ h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .side-img,
+  .side-video,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section {
+    padding: 2.5rem 1rem;
+  }
+
+  .project-card {
+    padding: 14px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pfp {
+    width: 120px;
+    height: 120px;
+  }
+}
